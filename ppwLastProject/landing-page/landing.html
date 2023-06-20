@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siswa Go - Platform Kelas Gratis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        span.atmojo{
+            color: #4640DE;
+        }
+
+        a#masuk-link{
+            color: #4640DE !important;
+            text-decoration: none;
+        }
+
+
+        a#btn-register{
+            color: white !important;
+            text-decoration: none;
+        }
+
+        .btn-masuk:hover > a#masuk-link{
+            color: white !important;
+        }
+
+        #jumbotron-1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #jumbotron-2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-link:hover{
+            color: #4640DE;
+        }
+
+        #btn-primary-jumbotron{
+            background-color: #4640DE;
+        }
+    </style>
+</head>
+<body style="background-color: #FBFBFE;">
+    <!-- bagian navbar -->
+    <div class="bagian-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand fw-bold" href="#">Siswa <span class="atmojo">Go</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item m-2">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <button class="btn btn-masuk btn-outline-secondary ms-1" type="">
+                    <a id="masuk-link" href="../sign-up-page/login.php">Masuk</a>
+                </button>
+                </div>
+            </nav>
+        </div>
+        
+    </div>
+    <div class="container" >
+        <!-- header -->
+        <div class="bagian-header" >
+            <div class="row">
+                <div id="jumbotron-1" class="d-flex justify-content-center align-items-center flex-column col-sm-6 col-md-6 g-3">
+                    <img src="src/heroimage.jpg" id="gambar-jumbotron">                    
+                </div>
+                <div id="jumbotron-2" class="d-flex justify-content-center align-items-center flex-column col-sm-6 col-md-6">
+                    <div class="jumbotron-inside">
+                        <h5>
+                            Class Management System
+                        </h5>
+                        <h2 class="fw-bolder">
+                            Maksimalkan <span class="atmojo">Pengembangan Kelas Anda </span> dengan <span class="atmojo">Siswa GO</span>
+                        </h2>
+                        <p>
+                            "Peningkatan Efisiensi Kegiatan Belajar Mengajar melalui Sistem Manajemen Kelas"
+                        </p>
+                        <div class="button-jumbotron">
+                            <button type="button" id="btn-primary-jumbotron" class="btn btn-primary p-3">
+                                <a id="btn-register" href="../sign-up-page/register.php">
+                                    Daftar Sekarang >
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Card portos -->
+        <div id="service" class=" card-section d-flex flex-column pt-5">
+            <div class="judul-card d-flex justify-content-center mb-5">
+                <h2 class="fw-bold" style="color: #4640DE;">
+                    What we provide to you?
+                </h2>
+            </div>
+            <div class="card-samping d-flex flex-row justify-content-evenly" style="gap: 5px;">
+                <div class="row g-4">
+                    <div class="col-lg d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <img height="200" src="src/webdev.jpg" class="card-img-top" alt="porto">
+                            <div class="card-body">
+                                <h4 class="fw-bolder">
+                                Kelas Interaktif
+                                </h4>
+                                <p class="card-text">
+                                    Mengatur kelas, seperti dengan memberi pengumuman, tanya jawab pertanyaan, dll.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                        <img height="200" src="src/uiux.jpg" class="card-img-top" alt="porto">
+                        <div class="card-body">
+                            <h4 class="fw-bolder">
+                            Dashboard Siswa
+                            </h4>
+                            <p class="card-text">
+                                Siswa dapat melihat silabus, materi, serta bertukar pikiran dengan guru.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <img height="200" src="src/branddesign.jpg" class="card-img-top"  alt="porto">
+                            <div class="card-body">
+                                <h4 class="fw-bolder">
+                                Login dan Register
+                                </h4>
+                                <p class="card-text">
+                                    Dengan fitur ini, data akan tersimpan dengan baik, sekaligus terjaga kekal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- footer section -->
+    <div id="footer" class="footer-section d-flex justify-content-center align-items-center flex-row mt-5 p-3" style="background-color: #232429; color: #FBFBFE;">
+        <div class="d-flex flex-column align-items-center">
+            <footer class="d-flex flex-wrap">
+                <footer class="col-lg d-flex align-items-start me-5">
+                    <div class="d-flex flex-column align-content-center">
+                        <p class="mt-4 fw-bold fs-5">
+                            About Us
+                        </p>
+                        <p class="">
+                            Fadhil Atmojo - Yogyakarta, Indonesia © 2023
+                        </p>
+                    </div>
+                </footer>
+                <footer class="col-lg d-flex align-items-start me-5">
+                    <div class="d-flex flex-column align-content-center">
+                        <p class="mt-4 fw-bold">
+                            Fadhil Atmojo - Yogyakarta, Indonesia © 2023
+                        </p>
+                        <p class="">
+                            Fadhil Atmojo - Yogyakarta, Indonesia © 2023
+                        </p>
+                        <p class="">
+                            Fadhil Atmojo - Yogyakarta, Indonesia © 2023
+                        </p>
+                    </div>
+                </footer>
+            </footer>
+            <a href="mailto:fadhillatmojo@gmail.com?subject=Halo&body=Hai%20Fadhill,%0D%0ASalam%20aku%20ingin%20berbicara%20denganmu!">
+                <button type="button" id="btn-primary-jumbotron" class="btn btn-primary p-3 mt-4">
+                    Let's talk >
+                </button>
+            </a>
+            <p class="mt-4">
+                Fadhil Atmojo - Yogyakarta, Indonesia © 2023
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
